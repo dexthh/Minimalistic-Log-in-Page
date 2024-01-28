@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="rectangle">
+        <div class="profilePic"></div>
+        <div class="userName" id="userName">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="#c1c1c1"
+            class="bi bi-person-fill"
+            viewBox="0 0 16 16"
+            style="margin-left: 10px; margin-right: 10px;"
+            id="personsvg"
+          >
+            <path
+              d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+            />
+          </svg>
+          <input type="text" id="userNameField" placeholder="Enter username" onfocus="darkUserName()" onblur="defaultUserName()"/>
+        </div>
+        <div class="password" id="password">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="#c1c1c1"
+            class="bi bi-person-fill-lock"
+            viewBox="0 0 16 16"
+            style="margin-left: 10px; margin-right: 10px;"
+            id="personlocksvg"
+          >
+            <path
+              d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5v-1a2 2 0 0 1 .01-.2 4.49 4.49 0 0 1 1.534-3.693Q8.844 9.002 8 9c-5 0-6 3-6 4m7 0a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1"
+            />
+          </svg>
+          <input
+            type="password"
+            placeholder="Enter password"
+            id="passwordField"
+            onfocus="darkPassword()"
+            onblur="defaultPassword()"
+          />
+        </div>
+        <div class="logIn">
+          <button id="logIn">Log in</button>
+        </div>
+        <div class="signUp">
+          <span
+            >Don't have an account?
+            <a href="#" id="signUpLink">Sign up.</a></span
+          >
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

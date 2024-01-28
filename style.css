@@ -1,0 +1,200 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body::before {
+    content: '';
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(pexels-tyler-lastovich-772803.jpg);
+    background-position: center center;
+    background-size: cover;
+    filter: blur(3px);
+    margin: 0;
+    padding: 0;
+  }
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+.rectangle {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 500px;
+    height: 800px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 6px;
+    justify-content: center;
+}
+
+.profilePic {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    background-image: url(basic-default-pfp-pxi77qv5o0zuz8j3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.userName {
+    margin-top: 50px;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    user-select: none;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 50px;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+#userNameField {
+    border-radius: 10px;
+    text-align: center;
+    height: 25px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    height: 100%;
+    box-sizing: border-box;
+    padding-right: 35px;
+}
+
+#userNameField:focus {
+    outline: none;
+}
+
+#userNameField::placeholder {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    user-select: none;
+    color: #c1c1c1;
+    font-weight: 400;
+}
+
+.password {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 50px;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+#passwordField {
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    padding-right: 35px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    box-sizing: border-box;
+}
+
+#passwordField::placeholder {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    user-select: none;
+    color: #c1c1c1;
+    font-weight: 400;
+}
+
+#passwordField:focus {
+    outline: none;
+}
+
+.logIn {
+    margin-top: 95px;
+}
+
+#logIn {
+    border: none;
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    border-radius: 10px;
+    color: #c1c1c1;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    user-select: none;
+    border-color: transparent;
+    width: 150px;
+    height: 50px;
+    font-weight: 400;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+#logIn:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.signUp {
+    margin-top: 150px;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    font-weight: 500;
+    font-size: 15px;
+    user-select: none;
+}
+
+#signUpLink {
+    color: #7593ff;
+}
+
+#signUpLink:hover{
+    color: #335fff;
+}
+
+
